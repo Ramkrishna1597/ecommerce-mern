@@ -10,9 +10,9 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors())
-app.use(fileupload({
-    useTempFiles:true
-}))
+// app.use(fileupload({
+//     useTempFiles:true
+// }))
 
 // connect to mongodb
 const URI = process.env.MONGODB_URL
